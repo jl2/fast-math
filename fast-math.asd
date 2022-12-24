@@ -22,5 +22,6 @@
   :serial t
   :depends-on (#:alexandria #:sb-simd)
   :components ((:file "package")
-               (:file "fast-math"))
+               (:file "fast-math")
+               (:file "benchmarks"))
   :in-order-to ((test-op (test-op fast-math.test))))

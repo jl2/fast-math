@@ -16,7 +16,13 @@
 
 (defpackage :fast-math
 
-  (:nicknames)
+  (:nicknames :fm)
 
-  (:use #:cl #:alexandria)
-  (:export ))
+  (:use #:cl #:alexandria #:sb-simd-avx2)
+  (:export #:simd-dot #:vec4 #:v+ #:v- #:vsum
+           #:mv+ #:mv- #:mv.
+           #:v. #:vcross
+           #:vec4-aref
+           #:components
+           #:vx #:vy #:vz #:vw
+           ))
